@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>AppComponent</h1>
+  <div style="background-color:lightgray; padding: 2em">
+    <p>
+      <button type="button" (click)="counterRoot.increment()">
+        Increment Root
+      </button>
+      <span> {{ counterRoot.count }}</span>
+    </p>
+    <p>
+      <button type="button" (click)="counterAny.increment()">
+        Increment Any
+      </button>
+      <span> {{ counterAny.count }}</span>
+    </p>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
